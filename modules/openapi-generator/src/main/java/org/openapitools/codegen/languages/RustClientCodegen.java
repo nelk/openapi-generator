@@ -126,7 +126,7 @@ public class RustClientCodegen extends DefaultCodegen implements CodegenConfig {
         typeMapping.put("file", "&std::path::Path");
         typeMapping.put("binary", "::models::File");
         typeMapping.put("ByteArray", "String");
-        typeMapping.put("object", "Value");
+        typeMapping.put("object", "serde_json::Value");
 
         // no need for rust
         //importMapping = new HashMap<String, String>();
